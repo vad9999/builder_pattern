@@ -14,7 +14,7 @@ namespace builder_pattern
         public Storage Storage { get; set; }
         public GPU GPU { get; set; }
 
-        public override string ToString()
+        public string Build()
         {
             StringBuilder sb = new StringBuilder();
 

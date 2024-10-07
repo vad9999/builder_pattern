@@ -14,7 +14,7 @@ namespace builder_pattern
             ConcreteCollector concrete_collector = new ConcreteCollector();
             Collector collector = new ConcreteComputerBuilder();
             Computer comp = concrete_collector.PC(collector);
-            Console.WriteLine(comp.ToString());
+            Console.WriteLine(comp.Build());
 
             Console.Read();
         }
